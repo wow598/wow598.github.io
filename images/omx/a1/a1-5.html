@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Full Page</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.css">
+	<style type="text/css">
+		body{
+			color: #fff;
+		}		
+		.slide{
+			text-align: center;
+			font-size: 50px;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="fullpage">
+		<div class="section">
+			<!-- <h1>依稀恩人</h1> -->
+			<img src="imgs/21.jpg" height=100%>
+		</div>
+		<div class="section">
+			<div class="slide">
+				<img src="imgs/1.jpg" height=100%>
+				<img src="imgs/2.jpg" height=100%>
+			</div>
+			<div class="slide">
+				<img src="imgs/3.jpg" height=100%>
+				<img src="imgs/4.jpg" height=100%>
+			</div>
+			<div class="slide">
+				<img src="imgs/5.jpg" height=100%>
+				<img src="imgs/6.jpg" height=100%>
+			</div>
+			<div class="slide">
+				<img src="imgs/7.jpg" height=100%>
+				<img src="imgs/8.jpg" height=100%>
+			</div>
+		</div>
+		<div class="section">
+			<!-- <h1>依稀恩人</h1> -->
+			<img src="imgs/10.jpg" height=100%>
+		</div>
+		<div class="section">
+			<div class="slide">
+				<img src="imgs/21.jpg" height=100%>
+			</div>
+			<div class="slide">
+				<img src="imgs/24.jpg" height=100%>
+			</div>
+			<div class="slide">
+				<img src="imgs/30.jpg" height=100%>
+			</div>
+			<div class="slide">
+				<img src="imgs/31.jpg" height=100%>
+			</div>
+			<div class="slide">
+				<img src="imgs/33.jpg" height=100%>
+			</div>
+		</div>
+	</div>
+
+	
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#fullpage').fullpage(
+				{
+					sectionsColor:['green','orange','blue','purple'],
+					controlArrows:true,
+					verticalCentered:true,
+					resize:true,
+					scrollingSpeed:500,
+					anchors:['page1','page2','page3','page4']
+				}
+			);
+		});
+	</script>
+</body>
+
+
+</html>
